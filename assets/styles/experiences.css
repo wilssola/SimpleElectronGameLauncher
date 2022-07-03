@@ -1,0 +1,119 @@
+.header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: gainsboro;
+
+    transition-duration: 250ms;
+}
+
+.menu-button {
+    cursor: pointer;
+
+    color: white;
+    text-decoration: none;
+
+    position: relative;
+    float: left;
+
+    padding: 5px 10px 5px 10px;
+
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+
+    transition-duration: 250ms;
+}
+
+.menu-button:hover {    
+    transform: scale(1.1, 1.1);
+
+    transition-duration: 250ms;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+
+    row-gap: 5px;
+    column-gap: 5px;
+
+    margin: 0.25vw;
+    padding: 0.25vw;
+
+    font-size: 25px;
+}
+
+.game {
+    cursor: pointer;
+
+    margin: 1vw;
+    padding: 1vw;
+
+    text-decoration: none;
+
+    transition-duration: 250ms;
+}
+
+.game:hover {
+    transform: scale(1.1, 1.1);
+
+    transition-duration: 250ms;
+}
+
+.game-image {
+    width: 15vw;
+    height: 15vw;
+
+    border-radius: 7.5%;
+    background-color: grey;
+}
+
+.game-name {
+    width: 100%;
+    height: auto;
+
+    color: black;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-size: 1.5vw;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 1vw;
+}
+
+.game-description {
+    color: grey;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    font-size: 1vw;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 512px) {
+    .content {
+        display: grid;
+        row-gap: 5px;
+        column-gap: 5px;
+        grid-template-columns: auto auto auto;
+    }
+
+    .game-image {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .game-name {
+        font-size: 2vw;
+    }
+
+    .game-description {
+        font-size: 1.5vw;
+    }
+}

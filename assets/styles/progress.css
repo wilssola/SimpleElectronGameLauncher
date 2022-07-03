@@ -1,0 +1,22 @@
+.content {
+    margin: 6.5vw;
+    padding: 6.5vw;
+
+    font-size: 2.75vw;
+    line-height: 5vw;
+    text-align: center;
+}
+
+.progress {
+    width: 100%;
+}
+
+.progress-bar {
+    height: 5vw;
+
+    margin: 1vw;
+
+    background-color: gainsboro;
+
+    border-radius: 15px;
+}

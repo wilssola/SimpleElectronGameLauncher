@@ -1,0 +1,20 @@
+{
+  "name": "launcher",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . Launcher --overwrite --asar --platform=darwin --arch=x64 --prune=true --out=builds",
+    "package-win": "electron-packager . Launcher --overwrite --asar --platform=win32 --arch=x64 --prune=true --out=builds",
+    "package-linux": "electron-packager . Launcher --overwrite --asar --platform=linux --arch=x64 --prune=true --out=builds"
+  },
+  "devDependencies": {
+    "electron": "^19.0.7",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "decompress-zip": "^0.3.3",
+    "request": "^2.88.2"
+  }
+}
